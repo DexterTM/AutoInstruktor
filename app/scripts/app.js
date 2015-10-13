@@ -24,6 +24,21 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/znakovi', {
+        templateUrl: 'views/znakovi.html',
+        controller: 'ZnakoviCtrl',
+        controllerAs: 'znakovi'
+      })
+      .when('/raskrsnice', {
+        templateUrl: 'views/raskrsnice.html',
+        controller: 'RaskrsniceCtrl',
+        controllerAs: 'raskrsnice'
+      })
+      .when('/testovi', {
+        templateUrl: 'views/testovi.html',
+        controller: 'TestoviCtrl',
+        controllerAs: 'testovi'
+      })
       .otherwise({
         redirectTo: '/'
       });
